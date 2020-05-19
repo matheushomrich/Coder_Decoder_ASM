@@ -1,0 +1,26 @@
+lui $1,0x00001001     
+ori $4,$1,0x0000000c       
+addiu $2,$0,0x00000004 
+syscall               
+addiu $2,$0,0x00000005
+syscall               
+addu $8,$0,$2         
+lui $1,0x00001001     
+ori $4,$1,0x00000022       
+addiu $2,$0,0x00000004 
+syscall               
+addiu $2,$0,0x00000005
+syscall               
+addu $9,$0,$2         
+addu $8,$8,$9         
+addiu $4,$8,0x00000000
+addu $24,$0,$4        
+lui $1,0x00001001     
+ori $4,$1,0x00000038       
+addiu $2,$0,0x00000004 
+syscall               
+addu $4,$0,$24        
+addiu $2,$0,0x00000001
+syscall                 
+addiu $2,$0,0x0000000a
+syscall               
